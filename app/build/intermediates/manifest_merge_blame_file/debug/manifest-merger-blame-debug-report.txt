@@ -1,0 +1,512 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.logic.android.onetoone.basic_video_chat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:5:5-65
+11-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+13-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:7:5-71
+13-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:7:22-68
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:8:5-68
+14-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:8:22-65
+15    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+15-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:9:5-80
+15-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:9:22-77
+16
+17    <uses-feature android:name="android.hardware.camera" />
+17-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:11:5-60
+17-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:11:19-57
+18    <uses-feature android:name="android.hardware.camera.autofocus" />
+18-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:12:5-70
+18-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:12:19-67
+19
+20    <uses-permission android:name="android.permission.BLUETOOTH" />
+20-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:13:5-68
+20-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:13:22-65
+21    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+21-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:14:5-75
+21-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:14:22-72
+22    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+22-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:15:5-75
+22-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:15:22-72
+23
+24    <uses-feature
+24-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:21:5-23:35
+25        android:glEsVersion="0x00020000"
+25-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:22:9-41
+26        android:required="true" />
+26-->[com.opentok.android:opentok-android-sdk:2.16.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\70b30d4d3746ee7021fa0cd29babba23\opentok-android-sdk-2.16.2\AndroidManifest.xml:23:9-32
+27
+28    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+28-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:17:5-79
+28-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:17:22-76
+29    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+29-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:26:5-82
+29-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:26:22-79
+30
+31    <application
+31-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:14:5-63:19
+32        android:name="androidx.multidex.MultiDexApplication"
+33        android:allowBackup="true"
+33-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:15:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.1.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\478b79604eaaf934858ce3739dce1708\core-1.1.0\AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@drawable/logo"
+36-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:16:9-38
+37        android:label="Seek &amp; Learn"
+37-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:17:13-45
+38        android:supportsRtl="true"
+38-->[com.facebook.android:facebook-login:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\e3ede0f45db92e225a16cbc0babe02d0\jetified-facebook-login-4.42.0\AndroidManifest.xml:28:18-44
+39        android:testOnly="true"
+40        android:theme="@style/Theme.MyThemme" >
+40-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:18:9-46
+41        <activity android:name="com.logic.android.onetoone.basic_video_chat.login.SignUpActivity" />
+41-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:19:9-110
+41-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:19:19-98
+42        <activity android:name="com.logic.android.onetoone.basic_video_chat.dashboard.DashBoardActivity" />
+42-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:20:9-108
+42-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:20:19-105
+43        <activity android:name="com.logic.android.onetoone.basic_video_chat.login.LoginActivity" />
+43-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:21:9-100
+43-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:21:19-97
+44        <activity android:name="com.logic.android.onetoone.basic_video_chat.onboard.OnBoardActivity" />
+44-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:22:9-104
+44-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:22:19-101
+45        <activity android:name="com.logic.android.onetoone.views.SplashActivity" >
+45-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:23:9-29:20
+45-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:23:19-81
+46            <intent-filter>
+46-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:24:13-28:29
+47                <action android:name="android.intent.action.MAIN" />
+47-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:25:17-69
+47-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:25:25-66
+48
+49                <category android:name="android.intent.category.LAUNCHER" />
+49-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:27:17-77
+49-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:27:27-74
+50            </intent-filter>
+51        </activity>
+52        <activity android:name="com.logic.android.onetoone.views.authentication.UserLoginActivity" />
+52-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:30:9-101
+52-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:30:19-99
+53        <activity android:name="com.logic.android.onetoone.views.authentication.ResetPasswordActivity" />
+53-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:31:9-105
+53-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:31:19-103
+54        <activity android:name="com.logic.android.onetoone.views.homeScreen.MainScreenActivity" />
+54-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:32:9-98
+54-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:32:19-96
+55        <activity android:name="com.logic.android.onetoone.views.Enroll.EnrollQuizActivity" />
+55-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:33:9-94
+55-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:33:19-92
+56        <activity android:name="com.logic.android.onetoone.views.homeLiveQuiz.HomeLiveQuizList" />
+56-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:34:9-98
+56-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:34:19-96
+57        <activity android:name="com.logic.android.onetoone.views.LeaderBoard.ResultActivity" />
+57-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:35:9-95
+57-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:35:19-93
+58        <activity android:name="com.logic.android.onetoone.views.LiveQuiz.FinishQuizActivity" />
+58-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:36:9-96
+58-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:36:19-94
+59        <activity android:name="com.logic.android.onetoone.views.LiveQuiz.GetQuizReadyActivity" />
+59-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:37:9-98
+59-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:37:19-96
+60        <activity android:name="com.logic.android.onetoone.views.LiveQuiz.QuizStartActivity" />
+60-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:38:9-95
+60-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:38:19-93
+61        <activity android:name="com.logic.android.onetoone.views.quizCategory.CategoryActivity" />
+61-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:39:9-98
+61-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:39:19-96
+62        <activity android:name="com.logic.android.onetoone.views.quizCategory.SubCategoriesActivity" />
+62-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:40:9-103
+62-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:40:19-101
+63        <activity android:name="com.logic.android.onetoone.views.withdraw.WithdrawMoneyActivity" />
+63-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:41:9-99
+63-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:41:19-97
+64        <activity android:name="com.logic.android.onetoone.views.AddCoinsActivity" />
+64-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:42:9-85
+64-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:42:19-83
+65        <activity
+65-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:49:9-52:52
+66            android:name="com.logic.android.onetoone.basic_video_chat.MainActivity"
+66-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:50:13-84
+67            android:label="@string/app_name"
+67-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:51:13-45
+68            android:screenOrientation="portrait" />
+68-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:52:13-49
+69
+70        <provider
+70-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:54:9-62:20
+71            android:name="androidx.core.content.FileProvider"
+71-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:55:13-62
+72            android:authorities="com.example.demoapp.provider"
+72-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:56:13-63
+73            android:exported="false"
+73-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:57:13-37
+74            android:grantUriPermissions="true" >
+74-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:58:13-47
+75            <meta-data
+75-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:59:13-61:73
+76                android:name="android.support.FILE_PROVIDER_PATHS"
+76-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:60:17-67
+77                android:resource="@xml/freshchat_file_provider_paths" />
+77-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:61:17-70
+78        </provider>
+79
+80        <activity
+80-->[pub.devrel:easypermissions:0.4.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\33cf7d5b0d744ee4ac8c8e2718aa3b7a\jetified-easypermissions-0.4.0\AndroidManifest.xml:12:9-16:66
+81            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+81-->[pub.devrel:easypermissions:0.4.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\33cf7d5b0d744ee4ac8c8e2718aa3b7a\jetified-easypermissions-0.4.0\AndroidManifest.xml:13:13-86
+82            android:exported="false"
+82-->[pub.devrel:easypermissions:0.4.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\33cf7d5b0d744ee4ac8c8e2718aa3b7a\jetified-easypermissions-0.4.0\AndroidManifest.xml:14:13-37
+83            android:label=""
+83-->[pub.devrel:easypermissions:0.4.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\33cf7d5b0d744ee4ac8c8e2718aa3b7a\jetified-easypermissions-0.4.0\AndroidManifest.xml:15:13-29
+84            android:theme="@style/EasyPermissions.Transparent" />
+84-->[pub.devrel:easypermissions:0.4.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\33cf7d5b0d744ee4ac8c8e2718aa3b7a\jetified-easypermissions-0.4.0\AndroidManifest.xml:16:13-63
+85        <activity
+85-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:20:9-22:68
+86            android:name="com.freshchat.consumer.sdk.activity.ChannelListActivity"
+86-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:21:13-83
+87            android:theme="@style/Theme.Freshchat.SelectedTheme" />
+87-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:22:13-65
+88        <activity
+88-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:23:9-27:57
+89            android:name="com.freshchat.consumer.sdk.activity.ConversationDetailActivity"
+89-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:24:13-90
+90            android:configChanges="orientation|screenSize"
+90-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:25:13-59
+91            android:theme="@style/Theme.Freshchat.SelectedTheme"
+91-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:26:13-65
+92            android:windowSoftInputMode="stateHidden" />
+92-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:27:13-54
+93        <activity
+93-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:28:9-31:68
+94            android:name="com.freshchat.consumer.sdk.activity.DeeplinkInterstitialActivity"
+94-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:29:13-92
+95            android:screenOrientation="portrait"
+95-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:30:13-49
+96            android:theme="@style/Theme.Freshchat.SelectedTheme" />
+96-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:31:13-65
+97        <activity
+97-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:32:9-36:58
+98            android:name="com.freshchat.consumer.sdk.activity.PictureAttachmentActivity"
+98-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:33:13-89
+99            android:configChanges="orientation|screenSize"
+99-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:34:13-59
+100            android:theme="@style/Theme.Freshchat.SelectedTheme"
+100-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:35:13-65
+101            android:windowSoftInputMode="adjustResize" />
+101-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:36:13-55
+102        <activity
+102-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:37:9-39:68
+103            android:name="com.freshchat.consumer.sdk.activity.CategoryListActivity"
+103-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:38:13-84
+104            android:theme="@style/Theme.Freshchat.SelectedTheme" />
+104-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:39:13-65
+105        <activity
+105-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:40:9-43:58
+106            android:name="com.freshchat.consumer.sdk.activity.ArticleListActivity"
+106-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:41:13-83
+107            android:theme="@style/Theme.Freshchat.SelectedTheme"
+107-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:42:13-65
+108            android:windowSoftInputMode="adjustResize" />
+108-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:43:13-55
+109        <activity
+109-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:44:9-46:68
+110            android:name="com.freshchat.consumer.sdk.activity.ArticleDetailActivity"
+110-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:45:13-85
+111            android:theme="@style/Theme.Freshchat.SelectedTheme" />
+111-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:46:13-65
+112        <activity
+112-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:47:9-50:54
+113            android:name="com.freshchat.consumer.sdk.activity.InterstitialActivity"
+113-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:48:13-84
+114            android:configChanges="orientation|screenSize"
+114-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:49:13-59
+115            android:theme="@style/Theme.AppCompat" />
+115-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:50:13-51
+116
+117        <service android:name="com.freshchat.consumer.sdk.service.FreshchatService" />
+117-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:52:9-87
+117-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:52:18-84
+118
+119        <receiver android:name="com.freshchat.consumer.sdk.receiver.FreshchatReceiver" >
+119-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:54:9-60:20
+119-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:54:19-87
+120            <intent-filter>
+120-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:55:13-59:29
+121                <action android:name="android.intent.action.BOOT_COMPLETED" />
+121-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:56:17-79
+121-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:56:25-76
+122                <action android:name="android.intent.action.LOCALE_CHANGED" />
+122-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:57:17-79
+122-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:57:25-76
+123                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+123-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:58:17-84
+123-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:58:25-81
+124            </intent-filter>
+125        </receiver>
+126        <receiver android:name="com.freshchat.consumer.sdk.receiver.FreshchatNetworkChangeReceiver" >
+126-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:61:9-65:20
+126-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:61:19-100
+127            <intent-filter>
+127-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:62:13-64:29
+128                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+128-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:63:17-79
+128-->[com.github.freshdesk:freshchat-android:2.6.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\6eb804ccee53ac966305e63cbddf8c28\jetified-freshchat-android-2.6.0\AndroidManifest.xml:63:25-76
+129            </intent-filter>
+130        </receiver>
+131
+132        <activity
+132-->[com.facebook.android:facebook-common:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\4d057180aeee35fedbc7b57b29c08316\jetified-facebook-common-4.42.0\AndroidManifest.xml:29:9-32:66
+133            android:name="com.facebook.FacebookActivity"
+133-->[com.facebook.android:facebook-common:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\4d057180aeee35fedbc7b57b29c08316\jetified-facebook-common-4.42.0\AndroidManifest.xml:30:13-57
+134            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+134-->[com.facebook.android:facebook-common:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\4d057180aeee35fedbc7b57b29c08316\jetified-facebook-common-4.42.0\AndroidManifest.xml:31:13-96
+135            android:theme="@style/com_facebook_activity_theme" />
+135-->[com.facebook.android:facebook-common:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\4d057180aeee35fedbc7b57b29c08316\jetified-facebook-common-4.42.0\AndroidManifest.xml:32:13-63
+136        <activity android:name="com.facebook.CustomTabMainActivity" />
+136-->[com.facebook.android:facebook-common:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\4d057180aeee35fedbc7b57b29c08316\jetified-facebook-common-4.42.0\AndroidManifest.xml:33:9-71
+136-->[com.facebook.android:facebook-common:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\4d057180aeee35fedbc7b57b29c08316\jetified-facebook-common-4.42.0\AndroidManifest.xml:33:19-68
+137        <activity android:name="com.facebook.CustomTabActivity" />
+137-->[com.facebook.android:facebook-common:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\4d057180aeee35fedbc7b57b29c08316\jetified-facebook-common-4.42.0\AndroidManifest.xml:34:9-67
+137-->[com.facebook.android:facebook-common:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\4d057180aeee35fedbc7b57b29c08316\jetified-facebook-common-4.42.0\AndroidManifest.xml:34:19-64
+138        <activity
+138-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:24:9-31:50
+139            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
+139-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:25:13-85
+140            android:excludeFromRecents="true"
+140-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:26:13-46
+141            android:exported="true"
+141-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:27:13-36
+142            android:launchMode="singleTask"
+142-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:28:13-44
+143            android:permission="com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN"
+143-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:29:13-102
+144            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+144-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:30:13-72
+145
+146        <service
+146-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:33:9-39:19
+147            android:name="com.google.firebase.components.ComponentDiscoveryService"
+147-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:34:13-84
+148            android:exported="false" >
+148-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:35:13-37
+149            <meta-data
+149-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:36:13-38:85
+150                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+150-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:37:17-109
+151                android:value="com.google.firebase.components.ComponentRegistrar" />
+151-->[com.google.firebase:firebase-auth:16.0.5] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\ae7c6f2939d64284fa7f62795d33de8c\jetified-firebase-auth-16.0.5\AndroidManifest.xml:38:17-82
+152            <meta-data
+152-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\bd07cd8f8ec24f795a3c8e14023f798f\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:15:13-17:85
+153                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+153-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\bd07cd8f8ec24f795a3c8e14023f798f\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:16:17-111
+154                android:value="com.google.firebase.components.ComponentRegistrar" />
+154-->[com.google.firebase:firebase-firestore:17.1.2] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\bd07cd8f8ec24f795a3c8e14023f798f\jetified-firebase-firestore-17.1.2\AndroidManifest.xml:17:17-82
+155            <meta-data
+155-->[com.google.firebase:firebase-functions:16.1.3] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\84b7f9a67ce4bbe4e16c7b8f012ab670\jetified-firebase-functions-16.1.3\AndroidManifest.xml:14:13-16:85
+156                android:name="com.google.firebase.components:com.google.firebase.functions.FunctionsRegistrar"
+156-->[com.google.firebase:firebase-functions:16.1.3] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\84b7f9a67ce4bbe4e16c7b8f012ab670\jetified-firebase-functions-16.1.3\AndroidManifest.xml:15:17-111
+157                android:value="com.google.firebase.components.ComponentRegistrar" />
+157-->[com.google.firebase:firebase-functions:16.1.3] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\84b7f9a67ce4bbe4e16c7b8f012ab670\jetified-firebase-functions-16.1.3\AndroidManifest.xml:16:17-82
+158            <meta-data
+158-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:32:13-34:85
+159                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+159-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:33:17-96
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:34:17-82
+161        </service>
+162        <!--
+163             FirebaseMessagingService performs security checks at runtime,
+164             no need for explicit permissions despite exported="true"
+165        -->
+166        <service
+166-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\350a3089ace32c2a4966d41fa5e771ea\jetified-firebase-messaging-17.3.4\AndroidManifest.xml:28:9-34:19
+167            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+167-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\350a3089ace32c2a4966d41fa5e771ea\jetified-firebase-messaging-17.3.4\AndroidManifest.xml:29:13-82
+168            android:exported="true" >
+168-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\350a3089ace32c2a4966d41fa5e771ea\jetified-firebase-messaging-17.3.4\AndroidManifest.xml:30:13-36
+169            <intent-filter android:priority="-500" >
+169-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\350a3089ace32c2a4966d41fa5e771ea\jetified-firebase-messaging-17.3.4\AndroidManifest.xml:31:13-33:29
+169-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\350a3089ace32c2a4966d41fa5e771ea\jetified-firebase-messaging-17.3.4\AndroidManifest.xml:31:28-51
+170                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+170-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\350a3089ace32c2a4966d41fa5e771ea\jetified-firebase-messaging-17.3.4\AndroidManifest.xml:32:17-78
+170-->[com.google.firebase:firebase-messaging:17.3.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\350a3089ace32c2a4966d41fa5e771ea\jetified-firebase-messaging-17.3.4\AndroidManifest.xml:32:25-75
+171            </intent-filter>
+172        </service>
+173
+174        <activity
+174-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:23:9-27:75
+175            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+175-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:24:13-93
+176            android:excludeFromRecents="true"
+176-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:25:13-46
+177            android:exported="false"
+177-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:26:13-37
+178            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+178-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:27:13-72
+179        <!--
+180            Service handling Google Sign-In user revocation. For apps that do not integrate with
+181            Google Sign-In, this service will never be started.
+182        -->
+183        <service
+183-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:33:9-36:110
+184            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+184-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:34:13-89
+185            android:exported="true"
+185-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:35:13-36
+186            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+186-->[com.google.android.gms:play-services-auth:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\110f4ed0208fe999d19be2075a59b7fa\jetified-play-services-auth-16.0.1\AndroidManifest.xml:36:13-107
+187
+188        <receiver
+188-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:37:9-44:20
+189            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+189-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:38:13-78
+190            android:exported="true"
+190-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:39:13-36
+191            android:permission="com.google.android.c2dm.permission.SEND" >
+191-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:40:13-73
+192            <intent-filter>
+192-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:41:13-43:29
+193                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+193-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:42:17-81
+193-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:42:25-78
+194            </intent-filter>
+195        </receiver>
+196        <!--
+197             FirebaseInstanceIdService performs security checks at runtime,
+198             no need for explicit permissions despite exported="true"
+199        -->
+200        <service
+200-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:50:9-56:19
+201            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+201-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:51:13-77
+202            android:exported="true" >
+202-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:52:13-36
+203            <intent-filter android:priority="-500" >
+203-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:53:13-55:29
+203-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:53:28-51
+204                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+204-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:54:17-80
+204-->[com.google.firebase:firebase-iid:17.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\382f2eb993f119ae7138ea6fa64d6929\jetified-firebase-iid-17.0.4\AndroidManifest.xml:54:25-77
+205            </intent-filter>
+206        </service>
+207
+208        <activity
+208-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\5e2fae11ed083ff574d9ec6bd23488ee\jetified-play-services-base-16.0.1\AndroidManifest.xml:23:9-26:75
+209            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+209-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\5e2fae11ed083ff574d9ec6bd23488ee\jetified-play-services-base-16.0.1\AndroidManifest.xml:24:13-79
+210            android:exported="false"
+210-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\5e2fae11ed083ff574d9ec6bd23488ee\jetified-play-services-base-16.0.1\AndroidManifest.xml:25:13-37
+211            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+211-->[com.google.android.gms:play-services-base:16.0.1] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\5e2fae11ed083ff574d9ec6bd23488ee\jetified-play-services-base-16.0.1\AndroidManifest.xml:26:13-72
+212
+213        <provider
+213-->[com.google.firebase:firebase-common:16.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\b8b2cd74f9ebf9a29f97d2b4195bfda0\jetified-firebase-common-16.0.4\AndroidManifest.xml:10:9-14:39
+214            android:name="com.google.firebase.provider.FirebaseInitProvider"
+214-->[com.google.firebase:firebase-common:16.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\b8b2cd74f9ebf9a29f97d2b4195bfda0\jetified-firebase-common-16.0.4\AndroidManifest.xml:11:13-77
+215            android:authorities="com.logic.android.onetoone.basic_video_chat.firebaseinitprovider"
+215-->[com.google.firebase:firebase-common:16.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\b8b2cd74f9ebf9a29f97d2b4195bfda0\jetified-firebase-common-16.0.4\AndroidManifest.xml:12:13-72
+216            android:exported="false"
+216-->[com.google.firebase:firebase-common:16.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\b8b2cd74f9ebf9a29f97d2b4195bfda0\jetified-firebase-common-16.0.4\AndroidManifest.xml:13:13-37
+217            android:initOrder="100" />
+217-->[com.google.firebase:firebase-common:16.0.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\b8b2cd74f9ebf9a29f97d2b4195bfda0\jetified-firebase-common-16.0.4\AndroidManifest.xml:14:13-36
+218
+219        <meta-data
+219-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\fb3e57b201725f12a48515630a70be68\jetified-play-services-basement-16.1.0\AndroidManifest.xml:23:9-25:69
+220            android:name="com.google.android.gms.version"
+220-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\fb3e57b201725f12a48515630a70be68\jetified-play-services-basement-16.1.0\AndroidManifest.xml:24:13-58
+221            android:value="@integer/google_play_services_version" />
+221-->[com.google.android.gms:play-services-basement:16.1.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\fb3e57b201725f12a48515630a70be68\jetified-play-services-basement-16.1.0\AndroidManifest.xml:25:13-66
+222        <!--
+223         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+224         with the application context. This config is merged in with the host app's manifest,
+225         but there can only be one provider with the same authority activated at any given
+226         point; so if the end user has two or more different apps that use Facebook SDK, only the
+227         first one will be able to use the provider. To work around this problem, we use the
+228         following placeholder in the authority to identify each host application as if it was
+229         a completely different provider.
+230        -->
+231        <provider
+231-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:39:9-42:40
+232            android:name="com.facebook.internal.FacebookInitProvider"
+232-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:40:13-70
+233            android:authorities="com.logic.android.onetoone.basic_video_chat.FacebookInitProvider"
+233-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:41:13-72
+234            android:exported="false" />
+234-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:42:13-37
+235
+236        <receiver
+236-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:44:9-50:20
+237            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+237-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:45:13-86
+238            android:exported="false" >
+238-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:46:13-37
+239            <intent-filter>
+239-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:47:13-49:29
+240                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+240-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:48:17-95
+240-->[com.facebook.android:facebook-core:4.42.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\56e84cd08ba30679c64055e341aeee2e\jetified-facebook-core-4.42.0\AndroidManifest.xml:48:25-92
+241            </intent-filter>
+242        </receiver>
+243        <receiver android:name="com.razorpay.RzpTokenReceiver" >
+243-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:12:9-16:20
+243-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:12:19-63
+244            <intent-filter>
+244-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:13:13-15:29
+245                <action android:name="rzp.device_token.share" />
+245-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:14:17-65
+245-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:14:25-62
+246            </intent-filter>
+247        </receiver>
+248
+249        <activity
+249-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:18:9-29:20
+250            android:name="com.razorpay.CheckoutActivity"
+250-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:19:13-57
+251            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+251-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:20:13-83
+252            android:theme="@style/CheckoutTheme" >
+252-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:21:13-49
+253            <intent-filter>
+253-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:22:13-28:29
+254                <action android:name="android.intent.action.MAIN" />
+254-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:25:17-69
+254-->C:\Users\Logic\Desktop\opentok-android-sdk-samples-master\Basic-Video-Chat\app\src\main\AndroidManifest.xml:25:25-66
+255
+256                <data
+256-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:25:17-27:47
+257                    android:host="rzp.io"
+257-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:26:21-42
+258                    android:scheme="io.rzp" />
+258-->[com.razorpay:checkout:1.5.4] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\c3811ae3abb481afddd11308e413282b\checkout-1.5.4\AndroidManifest.xml:27:21-44
+259            </intent-filter>
+260        </activity>
+261
+262        <provider
+262-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:23:9-27:43
+263            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+263-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:24:13-79
+264            android:authorities="com.logic.android.onetoone.basic_video_chat.lifecycle-process"
+264-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:25:13-69
+265            android:exported="false"
+265-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:26:13-37
+266            android:multiprocess="true" />
+266-->[androidx.lifecycle:lifecycle-process:2.0.0] C:\Users\Logic\.gradle\caches\transforms-2\files-2.1\9c91dc75531254eaf4317c8148932eda\lifecycle-process-2.0.0\AndroidManifest.xml:27:13-40
+267    </application>
+268
+269</manifest>

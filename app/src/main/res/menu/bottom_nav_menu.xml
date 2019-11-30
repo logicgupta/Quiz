@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_question"
+        android:icon="@drawable/question"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_person_outline_black_24dp"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_videocall"
+        android:icon="@drawable/ic_video_call_black_24dp"
+        android:title="" />
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@mipmap/settings"
+        android:title="" />
+</menu>

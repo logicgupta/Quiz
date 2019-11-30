@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_gravity="center"
+        android:id="@+id/test">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimary">
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/backTextView"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:text="   MOVIES"
+            android:gravity="center"
+            android:clickable="true"
+            android:textSize="16sp"
+            android:drawableLeft="@drawable/ic_chevron_left_black_24dp"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content" />
+
+        <SearchView
+            android:id="@+id/searchEdiText"
+            android:layout_width="336dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="7dp"
+            android:iconifiedByDefault="false"
+            android:background="@drawable/search_sesign"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:elevation="4dp"
+            android:paddingLeft="10dp"
+            android:queryHint="@string/search" />
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_marginTop="80dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subCategoriesRecyclerView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

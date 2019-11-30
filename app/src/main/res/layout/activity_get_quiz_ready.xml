@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_height="240dp">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:elevation="10dp"
+            android:layout_gravity="center"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserratb"
+            android:text="GOT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Random Facts"
+        android:layout_margin="8dp"
+        android:textSize="21dp"
+        android:fontFamily="@font/montserratb"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:id="@+id/factsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:textSize="24sp"
+        android:fontFamily="@font/montserratb"
+        android:text="Timer Position"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

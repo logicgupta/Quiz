@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">137026851481-kqm323hrt73dl3gr6b5kste40id2kc4n.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://basic-video-chat-68391.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">137026851481</string>
+    <string name="google_api_key" translatable="false">AIzaSyAHrIwwh0dJsdWvyy0XXM41ZFNP-LNLvvc</string>
+    <string name="google_app_id" translatable="false">1:137026851481:android:8aa51a8a06c113a4cc5e08</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAHrIwwh0dJsdWvyy0XXM41ZFNP-LNLvvc</string>
+    <string name="google_storage_bucket" translatable="false">basic-video-chat-68391.appspot.com</string>
+    <string name="project_id" translatable="false">basic-video-chat-68391</string>
+</resources>

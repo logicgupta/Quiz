@@ -5,4 +5,43 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="sign_in">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="sign_up">
+
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:textColor">
+            #80000000
+        </item>
+    </style>
+
+    <string name="to_reset_pa">
+To reset password, enter your email, press the\n button and check mail to follow instruction.
+</string>
+    <style name="userName">
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+    <style name="textView1">
+    <item name="android:textSize">30sp</item>
+    <item name="android:layout_gravity">center</item>
+    </style>
+
 </resources>

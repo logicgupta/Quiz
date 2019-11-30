@@ -14,19 +14,38 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
-
+            android:label="Seek &amp; Learn"
         android:theme="@style/Theme.MyThemme">
         <activity android:name="com.logic.android.onetoone.basic_video_chat.login.SignUpActivity"></activity>
         <activity android:name="com.logic.android.onetoone.basic_video_chat.dashboard.DashBoardActivity" />
         <activity android:name="com.logic.android.onetoone.basic_video_chat.login.LoginActivity" />
         <activity android:name="com.logic.android.onetoone.basic_video_chat.onboard.OnBoardActivity" />
-        <activity android:name="com.logic.android.onetoone.splash.SplashActivity">
+        <activity android:name="com.logic.android.onetoone.views.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.logic.android.onetoone.views.authentication.UserLoginActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.authentication.ResetPasswordActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.homeScreen.MainScreenActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.Enroll.EnrollQuizActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.homeLiveQuiz.HomeLiveQuizList"/>
+        <activity android:name="com.logic.android.onetoone.views.LeaderBoard.ResultActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.LiveQuiz.FinishQuizActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.LiveQuiz.GetQuizReadyActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.LiveQuiz.QuizStartActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.quizCategory.CategoryActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.quizCategory.SubCategoriesActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.withdraw.WithdrawMoneyActivity"/>
+        <activity android:name="com.logic.android.onetoone.views.AddCoinsActivity"/>
+
+
+
+
+
+
         <activity
             android:name="com.logic.android.onetoone.basic_video_chat.MainActivity"
             android:label="@string/app_name"
